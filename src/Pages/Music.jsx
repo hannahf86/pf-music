@@ -16,7 +16,7 @@ const Music = () => {
   return (
     <div id="music" className={styles.background}>
       <h1 className={styles.title}>MUSIC</h1>
-      <p className="font-serif text-base">Coming soon!</p>
+      <p className="font-serif text-lg">Coming soon!</p>
     </div>
   );
 };
