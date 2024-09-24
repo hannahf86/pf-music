@@ -16,7 +16,7 @@ const Bio = () => {
   return (
     <div id="bio" className={styles.background}>
       <h1 className={styles.title}>BIOGRAPHY</h1>
-      <p className="text-base">
+      <p className="text-lg">
         Paul Feehan is a versatile musician, working as a pianist, accompanist,
         conductor, teacher, composer and arranger.
         <br /> <br />
@@ -33,7 +33,7 @@ const Bio = () => {
 
       {/* IMAGE GALLERY 01 */}
 
-      <p>
+      <p className="text-lg">
         He participated on numerous occasions in the prestigious Principal’s
         Senior Recital series. After leaving the RNCM, Paul continued his
         studies with Martin Roscoe and Ryzard Bakst. <br /> <br />
@@ -45,7 +45,7 @@ const Bio = () => {
         Brass Class at the BBC Young Musician of the Year 2010). <br /> <br />
       </p>
 
-      <p>
+      <p className="text-lg">
         In December 2012, Paul was the recipient of a national composition
         award, where the judges were John Rutter, Stephen Cleobury (Director of
         King’s College Choir, Cambridge) and David Hurley (of the King’s
