@@ -59,7 +59,7 @@ const Services = () => {
         <p className={styles.contactInfo}>
           Please get in touch to find out more
         </p>
-        <Link to="contact" className={styles.button}>
+        <Link to="../contact" className={styles.button}>
           Contact
         </Link>
       </div>
