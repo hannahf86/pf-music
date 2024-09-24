@@ -23,7 +23,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootNav />}>
       {/* ERROR HANDLING */}
-      <Route index path="home" element={<Home />} />
+      <Route index element={<Home />} />
       <Route path="bio" element={<Bio />} />
       <Route path="services" element={<Services />} />
       <Route path="music" element={<Music />} />

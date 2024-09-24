@@ -34,7 +34,7 @@ const RootNav = () => {
     <div id="root-nav">
       {/* TOP MENU */}
       <div id="nav-container" className={styles.navContainer}>
-        <Link to="home" className={styles.logo}>
+        <Link to="/" className={styles.logo}>
           <p className="font-extrabold">PF MUSIC</p>
         </Link>
         <div className={styles.nav} onClick={openNav}>
@@ -47,7 +47,7 @@ const RootNav = () => {
             <div className={styles.nav} onClick={openNav}>
               <HiOutlineMinusSm size={30} />
             </div>
-            <Link to="home" className={styles.navLinks} onClick={openNav}>
+            <Link to="/" className={styles.navLinks} onClick={openNav}>
               <span>Home</span>
             </Link>
             <Link to="services" className={styles.navLinks} onClick={openNav}>
