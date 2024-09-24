@@ -35,7 +35,7 @@ const RootNav = () => {
       {/* TOP MENU */}
       <div id="nav-container" className={styles.navContainer}>
         <Link to="/" className={styles.logo}>
-          <p className="font-extrabold">PF MUSIC</p>
+          <p className="font-bold text-base">PF MUSIC</p>
         </Link>
         <div className={styles.nav} onClick={openNav}>
           <HiOutlineMenuAlt4 size={30} />

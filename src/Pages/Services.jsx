@@ -15,7 +15,7 @@ const Services = () => {
     container: "my-8 flex flex-col",
     serviceTitle:
       "font-bold text-black font-serif text-2xl text-center pt-4 underline decoration-dashed",
-    contactInfo: "text-center pb-6",
+    contactInfo: "text-center pb-6 text-base",
     button:
       "text-white font-serif text-lg tracking-wider bg-black outline outline-offset-2 outline-black px-12 py-2 rounded-full hover:bg-button hover:outline-none",
   };
@@ -23,7 +23,7 @@ const Services = () => {
   return (
     <div id="services" className={styles.background}>
       <h1 className={styles.title}>SERVICES</h1>
-      <p className="font-serif">
+      <p className="font-serif text-base">
         As an experienced musician and teacher, Paul offers all of the services
         listed below.
       </p>

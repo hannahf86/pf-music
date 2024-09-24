@@ -16,7 +16,7 @@ const Music = () => {
   return (
     <div id="music" className={styles.background}>
       <h1 className={styles.title}>MUSIC</h1>
-      <p className="font-serif">
+      <p className="font-serif text-base">
         Below are some of the original compositions and arrangements Paul has
         written.
       </p>

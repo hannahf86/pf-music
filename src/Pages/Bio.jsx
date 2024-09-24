@@ -16,7 +16,7 @@ const Bio = () => {
   return (
     <div id="bio" className={styles.background}>
       <h1 className={styles.title}>BIOGRAPHY</h1>
-      <p>
+      <p className="text-base">
         Paul Feehan is a versatile musician, working as a pianist, accompanist,
         conductor, teacher, composer and arranger.
         <br /> <br />
