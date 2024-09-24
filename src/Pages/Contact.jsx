@@ -24,7 +24,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   // EMAIL JS
-  const form = useRef();
+  const formRef = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,7 +33,7 @@ const Contact = () => {
     setMessage("");
 
     emailjs
-      .sendForm("service_igmsd0o", "template_mg063vq", form.current, {
+      .sendForm("service_igmsd0o", "template_mg063vq", formRef.current, {
         publicKey: "CLllgrNb6UYby4AOj",
       })
       .then(
@@ -57,10 +57,10 @@ const Contact = () => {
         Please fill out the form below to get in touch with Paul. Thank you.
       </p>
 
-      <form className={styles.form} onSubmit={sendEmail}>
+      <form className={styles.form} onSubmit={sendEmail} ref={formRef}>
         <input
           type="text"
-          name="user_name"
+          name="name"
           aria-label="name input"
           value={name}
           placeholder="Full name"
@@ -70,7 +70,7 @@ const Contact = () => {
         />
         <input
           type="email"
-          name="user_email"
+          name="email"
           aria-label="email input"
           value={email}
           placeholder="Email"
