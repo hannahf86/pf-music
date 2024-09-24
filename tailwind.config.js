@@ -27,7 +27,7 @@ export default {
         },
       },
       fontFamily: {
-        serif: ["Dm Serif Display", "serif"],
+        serif: ["DM Serif Display", "serif"],
         sans: ["Parisienne", "handwriting"],
       },
       fontSize: {

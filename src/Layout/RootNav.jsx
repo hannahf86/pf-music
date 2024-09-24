@@ -13,10 +13,13 @@ const RootNav = () => {
     nav: "absolute top-6 right-6 cursor-pointer text-black",
     logo: "absolute top-6 left-6 font-serif text-black",
     fullNav:
-      "top-0 absolute h-screen w-screen bg-white flex flex-col justify-start z-[99]",
-    linksContainer: "flex flex-col pt-40",
+      "top-0 absolute h-screen w-screen bg-background flex flex-col justify-start z-[99]",
+    linksContainer: "flex flex-col pt-24",
     navLinks:
       "text-black font-serif py-4 pr-6 font-bold uppercase text-right text-7xl hover:tracking-wider hover:underline underline-offset-4 decoration-dashed hover:text-button",
+    buttonContainer: "flex m-auto",
+    button:
+      "text-white font-serif text-lg tracking-wider bg-black outline outline-offset-2 outline-black px-24 py-4 rounded-full hover:bg-button hover:outline-none",
   };
 
   const [nav, setNav] = useState(false);
@@ -41,19 +44,25 @@ const RootNav = () => {
             <div className={styles.nav} onClick={openNav}>
               <HiOutlineMinusSm size={30} />
             </div>
-            <Link to="home" className={styles.navLinks}>
+            <Link to="home" className={styles.navLinks} onClick={openNav}>
               <span>Home</span>
             </Link>
-            <Link to="music" className={styles.navLinks}>
+            <Link to="services" className={styles.navLinks} onClick={openNav}>
+              <span>Services</span>
+            </Link>
+
+            <Link to="bio" className={styles.navLinks} onClick={openNav}>
+              <span>Bio</span>
+            </Link>
+            <Link to="music" className={styles.navLinks} onClick={openNav}>
               <span>Music</span>
             </Link>
-            <Link to="lessons" className={styles.navLinks}>
-              <span>Lessons</span>
-            </Link>
-            <Link to="contact" className={styles.navLinks}>
-              <span>contact</span>
-            </Link>
           </div>
+          <span className={styles.buttonContainer}>
+            <button className={styles.button} onClick={openNav}>
+              CONTACT
+            </button>
+          </span>
         </div>
       ) : (
         ""
