@@ -4,6 +4,9 @@ import { useState } from "react";
 // REACT ROUTER DOM
 import { Link, Outlet } from "react-router-dom";
 
+// PAGES
+import Footer from "./Footer";
+
 // ICONS
 import { HiOutlineMenuAlt4, HiOutlineMinusSm } from "react-icons/hi";
 
@@ -71,6 +74,7 @@ const RootNav = () => {
       )}
 
       <Outlet />
+      <Footer />
     </div>
   );
 };
