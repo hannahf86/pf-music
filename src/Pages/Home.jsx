@@ -6,7 +6,7 @@ const Home = () => {
     background: "bg-background h-screen ",
     nameContainer: "px-6 pt-24",
     name: "font-bold text-black font-serif text-8xl",
-    subName: "font-sans text-black text-7xl pt-4 text-right pr-4",
+    subName: "font-sans text-black text-7xl pt-4 text-right pr-8",
     taglineContainer: "pt-32",
     tagline: "font-serif text-black text-xl pl-6 leading-9",
     link: "font-serif text-lg text-black underline decoration-dashed px-6 pt-12 text-right hover:text-button",
