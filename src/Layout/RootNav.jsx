@@ -58,11 +58,13 @@ const RootNav = () => {
               <span>Music</span>
             </Link>
           </div>
-          <span className={styles.buttonContainer}>
-            <button className={styles.button} onClick={openNav}>
-              CONTACT
-            </button>
-          </span>
+          <Link to="contact" className={styles.buttonContainer}>
+            <span>
+              <button className={styles.button} onClick={openNav}>
+                CONTACT
+              </button>
+            </span>
+          </Link>
         </div>
       ) : (
         ""

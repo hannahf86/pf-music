@@ -6,7 +6,6 @@ export default {
     extend: {
       screens: {
         xs: "425px",
-        mdMid: "880px",
       },
       colors: {
         black: "#263236",

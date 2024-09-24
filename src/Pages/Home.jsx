@@ -27,7 +27,7 @@ const Home = () => {
           Accomplished composer <br />
           Experienced ensemble director
         </p>
-        <Link to="services">
+        <Link to="../services">
           <p className={styles.link}>Find out more</p>
         </Link>
       </div>
