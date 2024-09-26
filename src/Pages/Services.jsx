@@ -30,18 +30,6 @@ const Services = () => {
 
       {/* SERVICES */}
       <div className={styles.serviceContainer}>
-        {/* ITEM 01 */}
-        <div className={styles.container}>
-          <img src={perform} alt="piano performance" />
-          <h2 className={styles.serviceTitle}>TEACHING</h2>
-        </div>
-
-        {/* ITEM 02 */}
-        <div className={styles.container}>
-          <img src={lesson} alt="piano lesson" loading="lazy" />
-          <h2 className={styles.serviceTitle}>PIANO LESSONS</h2>
-        </div>
-
         {/* ITEM 03 */}
         <div className={styles.container}>
           <img src={conduct} alt="conducting ensembles" loading="lazy" />

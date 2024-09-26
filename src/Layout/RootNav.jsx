@@ -19,8 +19,8 @@ const RootNav = () => {
       "top-0 absolute h-screen w-screen bg-background flex flex-col justify-start z-[99]",
     linksContainer: "flex flex-col pt-24",
     navLinks:
-      "text-black font-serif py-4 pr-6 font-bold uppercase text-right text-7xl hover:tracking-wider hover:underline underline-offset-4 decoration-dashed hover:text-button",
-    buttonContainer: "flex m-auto",
+      "text-black font-serif py-4 pr-6 font-bold uppercase text-right text-7xl xl:text-5xl hover:tracking-wider hover:underline underline-offset-4 decoration-dashed hover:text-button",
+    buttonContainer: "flex m-auto xl:justify-end xl:mx-6",
     button:
       "text-white font-serif text-lg tracking-wider bg-black outline outline-offset-2 outline-black px-24 py-4 rounded-full hover:bg-button hover:outline-none",
   };
@@ -50,12 +50,13 @@ const RootNav = () => {
             <Link to="/" className={styles.navLinks} onClick={openNav}>
               <span>Home</span>
             </Link>
+
             <Link to="services" className={styles.navLinks} onClick={openNav}>
               <span>Services</span>
             </Link>
 
             <Link to="bio" className={styles.navLinks} onClick={openNav}>
-              <span>Bio</span>
+              <span>Biography</span>
             </Link>
             <Link to="music" className={styles.navLinks} onClick={openNav}>
               <span>Music</span>

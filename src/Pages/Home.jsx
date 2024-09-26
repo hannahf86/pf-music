@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const styles = {
     background: "bg-background h-screen ",
-    nameContainer: "px-6 pt-24",
+    nameContainer: "px-6 xl:px-12 pt-24",
     name: "font-bold text-black font-serif text-8xl",
-    subName: "font-sans text-black text-8xl pt-4 text-center pl-20",
-    taglineContainer: "pt-40",
+    subName:
+      "font-sans text-black text-8xl pt-4 text-center xl:text-right pl-20 xl:pr-20",
+    taglineContainer: "pt-40 xl:pt-32",
     tagline: "font-serif text-black text-xl pl-6 leading-9",
     link: "font-serif text-lg text-black underline decoration-dashed px-6 pt-12 text-right hover:text-button",
   };
@@ -21,7 +22,6 @@ const Home = () => {
 
       <div className={styles.taglineContainer}>
         <p className={styles.tagline}>
-          Top piano teacher in the UK <br />
           Award winning pianist
           <br />
           Accomplished composer <br />
